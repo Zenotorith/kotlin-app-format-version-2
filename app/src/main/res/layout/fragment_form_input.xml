@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FormInput">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40dp">
+
+        <!--Trip Name-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tripNameBase"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_marginHorizontal="20dp"
+            app:helperText="@string/required"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:helperTextTextColor="@android:color/holo_red_dark"
+            app:endIconMode="clear_text"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tripNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:inputType="text"
+                android:hint="@string/tripName"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--Destination-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/destinationBase"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_marginHorizontal="20dp"
+            app:helperText="@string/required"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text"
+            android:layout_marginTop="15dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            app:helperTextTextColor="@android:color/holo_red_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tripNameBase">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/destinationInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:maxLength="16"
+                android:inputType="text"
+                android:hint="@string/destination"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--Date-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dateBase"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_marginHorizontal="20dp"
+            app:helperText="@string/required"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text"
+            app:helperTextTextColor="@android:color/holo_red_dark"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/destinationBase">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dateInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:inputType="date"
+                android:hint="@string/date"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--Description-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/descriptionBase"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text"
+            app:counterEnabled="true"
+            app:counterMaxLength="50"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dateBase">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/descriptionInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:inputType="text"
+                android:hint="@string/description"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--Participant-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/participantBase"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text"
+
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/descriptionBase">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/participantInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:inputType="number"
+                android:hint="@string/participant"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--Vehicle-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/vehicleBase"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:helperTextTextColor="@android:color/holo_red_dark"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/participantBase">
+
+            <AutoCompleteTextView
+                android:id="@+id/vehicleInput"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:lines="1"
+                android:inputType="none"
+                android:hint="@string/vehicle"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/labelSwitch"
+            android:layout_marginTop="15dp"
+            android:text="@string/assessment"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vehicleBase"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/riskAssessment"
+            android:background="@null"
+            android:thumb="@drawable/thumb"
+            app:track="@drawable/track"
+            app:showText="true"
+            android:textOn="@string/switchOn"
+            android:textOff="@string/switchOff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/labelSwitch"
+            android:layout_marginHorizontal="20dp"
+            />
+
+
+        <!--Submit Trip-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submitTripButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/createTrip"
+            android:layout_marginBottom="15dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/base_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/riskAssessment"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DetailTrip">
+
+    <TextView
+        android:id="@+id/tripNameDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="@string/tripNameDetail"
+        android:textColor="@color/tripNameHeading"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/detailInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tripNameDetail">
+
+        <TextView
+            android:id="@+id/destinationDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/destinationDetail"
+            android:drawablePadding="8dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/tripDetail"
+            app:drawableLeftCompat="@drawable/ic_earth"
+            app:drawableTint="@color/iconDetail" />
+
+        <TextView
+            android:id="@+id/dateDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dateDetail"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="8dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/tripDetail"
+            app:drawableLeftCompat="@drawable/ic_calendar"
+            app:drawableTint="@color/iconDetail" />
+
+        <TextView
+            android:id="@+id/riskAssessmentDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/riskAssessmentDetail"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="8dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/tripDetail"
+            app:drawableLeftCompat="@drawable/ic_warning"
+            app:drawableTint="@color/iconDetail" />
+
+        <TextView
+            android:id="@+id/descriptionDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/descriptionDetail"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="8dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/tripDetail"
+            app:drawableLeftCompat="@drawable/ic_comment"
+            app:drawableTint="@color/iconDetail" />
+
+        <TextView
+            android:id="@+id/participantDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phoneDetail"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="8dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/tripDetail"
+            app:drawableLeftCompat="@drawable/ic_baseline_people_24"
+            app:drawableTint="@color/iconDetail" />
+
+        <TextView
+            android:id="@+id/vehicleDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hotelDetail"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="8dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/tripDetail"
+            app:drawableLeftCompat="@drawable/ic_suitcase"
+            app:drawableTint="@color/iconDetail" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/actionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailInfo">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/updateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:background="@drawable/update_trip_button"
+            android:text="@string/updateTrip"
+            app:backgroundTint="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/deleteButton"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="@string/deleteTrip"
+            app:backgroundTint="@null"
+            android:background="@drawable/delete_trip_button" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/actionExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/actionButton">
+
+        <TextView
+            android:id="@+id/showExpenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:text="@string/showExpense"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addExpenseButton"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="@string/add_expense_button"
+            android:layout_alignParentEnd="true"
+            app:backgroundTint="@null"
+            android:background="@drawable/add_expense_button"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listExpense"
+        android:layout_width="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actionExpense"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

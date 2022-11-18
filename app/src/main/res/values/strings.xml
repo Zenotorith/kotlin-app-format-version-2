@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Kotlin Native Vincent</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="required">Required</string>
+    <string name="tripName">Trip Name</string>
+    <string name="destination">Destination</string>
+    <string name="date">Date</string>
+    <string name="description">Description</string>
+    <string name="phone">Support Phone Number</string>
+    <string name="hotel">Hotel Name</string>
+    <string name="createTrip">Create Trip</string>
+    <string name="switchOn">YES</string>
+    <string name="switchOff">NO</string>
+    <string name="assessment">Requires risk assessment</string>
+    <string name="tripNameDetail">Hồ Chí Minh</string>
+    <string name="destinationDetail">Landmark 81</string>
+    <string name="dateDetail">11–11–2022</string>
+    <string name="riskAssessmentDetail">Yes</string>
+    <string name="descriptionDetail">Drink Coffee</string>
+    <string name="phoneDetail">0956789786</string>
+    <string name="hotelDetail">Caravelle</string>
+    <string name="placeOnMap">Show On Map</string>
+    <string name="updateTrip">Update Trip</string>
+    <string name="deleteTrip">Delete Trip</string>
+    <string name="add_expense_button">Add</string>
+    <string name="copyClipboard">Copy To ClipBoard</string>
+    <string name="showExpense">Show Expenses</string>
+    <string name="filterButton">filter</string>
+    <string name="destinationShowList">Quận Bình Thạnh</string>
+    <string name="dateShowList">15–03–2021</string>
+    <string name="tripNameShowList">Hồ Chí Minh</string>
+    <string name="shortCutDetailTrip">Open Detail Trip</string>
+    <string name="amount">Amount</string>
+    <string name="expenseType">Expense Type</string>
+    <string name="time">Time</string>
+    <string name="comment">Comment</string>
+    <string name="addExpense">Add Expense</string>
+    <string name="participant">Participant</string>
+    <string name="vehicle">Vehicle</string>
+</resources>

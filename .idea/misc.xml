@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/drawable/add_expense_button.xml" value="0.1815" />
+        <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/drawable/main_button.xml" value="0.1815" />
+        <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/drawable/search_general.xml" value="0.1815" />
+        <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/drawable/selector_item.xml" value="0.1815" />
+        <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/drawable/thumb.xml" value="0.1815" />
+        <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/drawable/update_trip_button.xml" value="0.1815" />
+        <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/font/fonts.xml" value="0.33611111111111114" />
+        <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/layout/activity_detail_trip.xml" value="0.3125" />
+        <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/layout/activity_main.xml" value="0.3125" />
+        <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/layout/add_expense.xml" value="0.3125" />
+        <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/layout/expense_item.xml" value="0.375" />
+        <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/layout/fragment_form_input.xml" value="0.3125" />
+        <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/layout/fragment_show_trip_list.xml" value="0.3125" />
+        <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/layout/list_expense.xml" value="0.23565573770491804" />
+        <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/layout/list_trip.xml" value="0.3125" />
+        <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/layout/search_condition_dialog.xml" value="0.3125" />
+        <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/layout/select_expense_type.xml" value="0.23565573770491804" />
+        <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/layout/select_vehicles.xml" value="0.3125" />
+        <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/layout/trip_item.xml" value="0.3125" />
+        <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/layout/update_trip.xml" value="0.335" />
+        <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/menu/bottom_navigation.xml" value="0.32135416666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

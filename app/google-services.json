@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "585271775711",
+    "project_id": "cw1-vincent",
+    "storage_bucket": "cw1-vincent.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585271775711:android:9f0e386f2e2b521d2d346a",
+        "android_client_info": {
+          "package_name": "com.example.kotlinnativevincent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "585271775711-rd5a7q3dh471t27o8lu8a9tq8agruqih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSZ4bgZd1Ferpbgw7X1yAVpt6fNfFJ3P0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "585271775711-rd5a7q3dh471t27o8lu8a9tq8agruqih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
