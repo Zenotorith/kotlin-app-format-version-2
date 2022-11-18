@@ -13,11 +13,11 @@
     <color name="selectedIconNav">#59C1BD</color>
     <color name="defaultIconNav">#0D4C92</color>
 
-    <!--Entry-->
+    <!--Form Input-->
     <color name="switchButton">#A0E4CB</color>
     <color name="submitButton">#975C8D</color>
 
-    <!--Show-->
+    <!--Show Trip List-->
     <color name="filterButton">#D989B5</color>
     <color name="moveDetailIcon">#FF7D7D</color>
     <color name="tripNameTitle">#FF000000</color>
