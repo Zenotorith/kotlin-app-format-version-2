@@ -9,27 +9,26 @@
     <color name="white">#FFFFFFFF</color>
 
     <!--Navigation-->
-    <color name="navigationBackground">#CFF5E7</color>
-    <color name="selectedIconNav">#59C1BD</color>
-    <color name="defaultIconNav">#0D4C92</color>
+    <color name="navigationBackground">#DADAE6</color>
+    <color name="selectedIconNav">#141466</color>
+    <color name="defaultIconNav">#2929CC</color>
 
     <!--Form Input-->
-    <color name="switchButton">#A0E4CB</color>
-    <color name="submitButton">#975C8D</color>
+    <color name="switchButton">#FF03DAC5</color>
+    <color name="submitButton">#141466</color>
 
     <!--Show Trip List-->
-    <color name="filterButton">#D989B5</color>
-    <color name="moveDetailIcon">#FF7D7D</color>
-    <color name="tripNameTitle">#FF000000</color>
+    <color name="filterButton">#141466</color>
+    <color name="moveDetailIcon">#141466</color>
+    <color name="tripNameTitle">#333333</color>
 
     <!--Detail-->
-    <color name="tripNameHeading">#F7A76C</color>
-    <color name="iconDetail">#7F669D</color>
-    <color name="tripDetail">#BA94D1</color>
-    <color name="map">#6C4AB6</color>
-    <color name="updateButton">#FFB200</color>
-    <color name="deleteButton">#E94560</color>
+    <color name="tripNameHeading">#2929CC</color>
+    <color name="iconDetail">#333333</color>
+    <color name="tripDetail">#333333</color>
+    <color name="updateButton">#2929CC</color>
+    <color name="deleteButton">#CA0525</color>
     <color name="addExpenseButton">#82CD47</color>
-    <color name="expenseLabel">#E97777</color>
+    <color name="expenseLabel">#6677CC</color>
 
 </resources>

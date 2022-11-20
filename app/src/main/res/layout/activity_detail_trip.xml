@@ -6,20 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".activities.DetailTrip">
 
-    <TextView
-        android:id="@+id/tripNameDetail"
-        android:layout_width="0dp"
+    <RelativeLayout
+        android:id="@+id/heading"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:gravity="center_horizontal"
-        android:text="@string/tripNameDetail"
-        android:textColor="@color/tripNameHeading"
-        android:textSize="25sp"
-        android:textStyle="bold"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tripNameDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="@string/tripNameDetail"
+            android:textColor="@color/tripNameHeading"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            app:backgroundTint="@null"
+            app:drawableLeftCompat="@drawable/ic_baseline_delete_24"
+            app:drawableTint="@color/deleteButton" />
+    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/detailInfo"
@@ -30,7 +48,7 @@
         android:layout_marginHorizontal="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tripNameDetail">
+        app:layout_constraintTop_toBottomOf="@+id/heading">
 
         <TextView
             android:id="@+id/destinationDetail"
@@ -113,7 +131,7 @@
 
     <LinearLayout
         android:id="@+id/actionButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -122,20 +140,13 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/updateButton"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="38dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
             android:background="@drawable/update_trip_button"
             android:text="@string/updateTrip"
             app:backgroundTint="@null" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/deleteButton"
-            android:layout_marginStart="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="38dp"
-            android:text="@string/deleteTrip"
-            app:backgroundTint="@null"
-            android:background="@drawable/delete_trip_button" />
 
     </LinearLayout>
 

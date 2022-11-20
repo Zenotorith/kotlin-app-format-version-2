@@ -27,33 +27,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
                 android:background="@drawable/search_general"
                 android:gravity="start"
                 android:iconifiedByDefault="false"
                 android:queryBackground="@android:color/transparent"
-                android:queryHint="Filter Trip" />
+                android:queryHint="Search your trip here..." />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="0.8">
 
-            <Button
+            <TextView
                 android:id="@+id/enableSearchDialogButton"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginStart="5dp"
-                android:background="@drawable/enable_condition_button"
+                android:background="@null"
                 android:singleLine="true"
-                android:text="@string/filterButton"
-                android:textColor="#fff"
-                android:textSize="11sp"
-                android:textStyle="bold"
-                app:backgroundTint="@null" />
+                app:drawableLeftCompat="@drawable/ic_baseline_filter_alt_24"
+                app:drawableTint="@color/defaultIconNav" />
 
         </LinearLayout>
 
@@ -64,6 +61,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="20dp"
         android:divider="@null"
         android:dividerHeight="0dp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -79,7 +79,7 @@ class DetailTrip : AppCompatActivity() {
         }
 
         //Delete Dialog
-        val deleteButton: MaterialButton = binding.deleteButton
+        val deleteButton: TextView = binding.deleteButton
         deleteButton.setOnClickListener {
             deleteTrip()
         }
