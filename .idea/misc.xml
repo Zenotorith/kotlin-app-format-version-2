@@ -24,6 +24,12 @@
         <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/layout/trip_item.xml" value="0.3125" />
         <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/layout/update_trip.xml" value="0.335" />
         <entry key="..\:/Coding/KotlinNativeVincent/app/src/main/res/menu/bottom_navigation.xml" value="0.32135416666666666" />
+        <entry key="..\:/Coding/mobile-native-kotlin/app/src/main/res/drawable/base_button.xml" value="0.1815" />
+        <entry key="..\:/Coding/mobile-native-kotlin/app/src/main/res/drawable/reset_button.xml" value="0.1815" />
+        <entry key="..\:/Coding/mobile-native-kotlin/app/src/main/res/drawable/search_general.xml" value="0.1815" />
+        <entry key="..\:/Coding/mobile-native-kotlin/app/src/main/res/layout/fragment_form_input.xml" value="0.3125" />
+        <entry key="..\:/Coding/mobile-native-kotlin/app/src/main/res/layout/fragment_show_trip_list.xml" value="0.3125" />
+        <entry key="..\:/Coding/mobile-native-kotlin/app/src/main/res/layout/trip_item.xml" value="0.3125" />
         <entry key="..\:/kotlin-app-format-version-2/app/src/main/res/layout/activity_detail_trip.xml" value="0.25" />
         <entry key="..\:/kotlin-app-format-version-2/app/src/main/res/layout/activity_main.xml" value="0.3015625" />
         <entry key="..\:/kotlin-app-format-version-2/app/src/main/res/layout/add_expense.xml" value="0.3015625" />

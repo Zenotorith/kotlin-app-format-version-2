@@ -204,12 +204,24 @@
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:text="@string/createTrip"
-            android:layout_marginBottom="15dp"
             app:backgroundTint="@null"
             android:background="@drawable/base_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/riskAssessment"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/resetTripButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/reset"
+            android:layout_marginTop="10dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/reset_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/submitTripButton"/>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

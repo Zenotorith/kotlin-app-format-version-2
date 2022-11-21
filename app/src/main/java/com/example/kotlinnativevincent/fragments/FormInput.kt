@@ -51,6 +51,7 @@ class FormInput : Fragment() {
     private lateinit var riskAssessmentSwitch : SwitchCompat
     private var riskAssessmentValue : String = "No"
     private lateinit var submitTripButton : MaterialButton
+    private lateinit var resetTripButton :MaterialButton
 
     private lateinit var tripNameListValidation : List<String>
 
@@ -76,6 +77,7 @@ class FormInput : Fragment() {
         vehicleBase = binding.vehicleBase
         riskAssessmentSwitch = binding.riskAssessment
         submitTripButton = binding.submitTripButton
+        resetTripButton = binding.resetTripButton
 
         //Make trip list for validation
         getTripList()
@@ -112,6 +114,11 @@ class FormInput : Fragment() {
             else
                 "No"
             riskAssessmentValue = value
+        }
+
+        //Reset Database
+        resetTripButton.setOnClickListener {
+            confirmReset()
         }
 
         return binding.root
@@ -227,6 +234,24 @@ class FormInput : Fragment() {
 
         })
 
+    }
+
+    private fun confirmReset() {
+        val message = "Confirm to reset all data"
+
+        AlertDialog.Builder(requireContext())
+            .setMessage(message)
+            .setPositiveButton("Confirm"){ _,_ ->
+                database.removeValue().addOnSuccessListener {
+                    Toast.makeText(requireContext(), "Reset Successfully", Toast.LENGTH_SHORT).show()
+                }.addOnFailureListener {
+                    Toast.makeText(requireContext(), "Reset Failed", Toast.LENGTH_SHORT).show()
+                }
+            }
+            .setNegativeButton("Cancel") { dialog, _ ->
+                dialog.dismiss()
+            }
+            .show()
     }
 
     private fun checkValidation() {

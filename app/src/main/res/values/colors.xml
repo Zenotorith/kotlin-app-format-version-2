@@ -16,6 +16,7 @@
     <!--Form Input-->
     <color name="switchButton">#FF03DAC5</color>
     <color name="submitButton">#141466</color>
+    <color name="resetButton">#EB6440</color>
 
     <!--Show Trip List-->
     <color name="filterButton">#141466</color>

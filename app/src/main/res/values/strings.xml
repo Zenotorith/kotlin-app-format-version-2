@@ -38,4 +38,5 @@
     <string name="addExpense">Add Expense</string>
     <string name="participant">Participant</string>
     <string name="vehicle">Vehicle</string>
+    <string name="reset">Reset</string>
 </resources>

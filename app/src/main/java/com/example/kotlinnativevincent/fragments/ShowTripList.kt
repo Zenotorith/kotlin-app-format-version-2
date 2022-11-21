@@ -91,16 +91,16 @@ class ShowTripList : Fragment() {
                 database.addValueEventListener(object: ValueEventListener {
                     override fun onDataChange(snapshot: DataSnapshot) {
                         try {
-                            val filteredItem = mutableListOf<ShowListTrip>()
+                            val filteredList = mutableListOf<ShowListTrip>()
                             val trip : List<ShowListTrip> = snapshot.children.map { dataSnapshot ->
 
                                 dataSnapshot.getValue(ShowListTrip::class.java)!!
 
                             }
 
-                            searchCondition(tripNameParam, destinationParam, dateParam, filteredItem, trip)
+                            searchConditionTrip(tripNameParam, destinationParam, dateParam, filteredList, trip)
 
-                            val filteredTrips: List<ShowListTrip> = filteredItem.toList()
+                            val filteredTrips: List<ShowListTrip> = filteredList.toList()
                             adapter.updateTripList(filteredTrips)
                         } catch (e: Exception) {
 
@@ -153,7 +153,7 @@ class ShowTripList : Fragment() {
         database.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 try {
-                    val filteredItem = mutableListOf<ShowListTrip>()
+                    val filteredList = mutableListOf<ShowListTrip>()
                     val trip : List<ShowListTrip> = snapshot.children.map { dataSnapshot ->
 
                         dataSnapshot.getValue(ShowListTrip::class.java)!!
@@ -165,11 +165,11 @@ class ShowTripList : Fragment() {
                             item.tripName!!.lowercase().contains(queryText.lowercase()) ||
                             item.date!!.lowercase().contains(queryText.lowercase()) ||
                             item.destination!!.lowercase().contains(queryText.lowercase())) {
-                            filteredItem.add(item)
+                            filteredList.add(item)
                         }
                     }
 
-                    val filteredTrips: List<ShowListTrip> = filteredItem.toList()
+                    val filteredTrips: List<ShowListTrip> = filteredList.toList()
                     adapter.updateTripList(filteredTrips)
 
                 }catch (e : Exception){
@@ -181,79 +181,79 @@ class ShowTripList : Fragment() {
         })
     }
 
-    private fun searchCondition(tripNameParam: String, destinationParam: String,
-                                dateParam: String, filteredItem: MutableList<ShowListTrip>, trip: List<ShowListTrip>) {
-        if(tripNameParam.isNotEmpty() && destinationParam.isEmpty() && dateParam.isEmpty()) {
+    private fun searchConditionTrip(tripNameSearchValue: String, destinationSearchValue: String,
+                                dateSearchValue: String, filteredList: MutableList<ShowListTrip>, trip: List<ShowListTrip>) {
+        if(tripNameSearchValue.isNotEmpty() && destinationSearchValue.isEmpty() && dateSearchValue.isEmpty()) {
             for (item in trip) {
                 if (
-                    item.tripName!!.lowercase().contains(tripNameParam.lowercase())) {
-                    filteredItem.add(item)
+                    item.tripName!!.lowercase().contains(tripNameSearchValue.lowercase())) {
+                    filteredList.add(item)
                 }
             }
         }
 
-        if(tripNameParam.isEmpty() && destinationParam.isNotEmpty() && dateParam.isEmpty()) {
+        if(tripNameSearchValue.isEmpty() && destinationSearchValue.isNotEmpty() && dateSearchValue.isEmpty()) {
             for (item in trip) {
                 if (
-                    item.destination!!.lowercase().contains(destinationParam.lowercase())) {
-                    filteredItem.add(item)
+                    item.destination!!.lowercase().contains(destinationSearchValue.lowercase())) {
+                    filteredList.add(item)
                 }
             }
         }
 
-        if(tripNameParam.isEmpty() && destinationParam.isEmpty() && dateParam.isNotEmpty()) {
+        if(tripNameSearchValue.isEmpty() && destinationSearchValue.isEmpty() && dateSearchValue.isNotEmpty()) {
             for (item in trip) {
                 if (
-                    item.date!!.lowercase().contains(dateParam.lowercase())) {
-                    filteredItem.add(item)
+                    item.date!!.lowercase().contains(dateSearchValue.lowercase())) {
+                    filteredList.add(item)
                 }
             }
         }
 
-        if(tripNameParam.isNotEmpty() && destinationParam.isNotEmpty() && dateParam.isEmpty()) {
+        if(tripNameSearchValue.isNotEmpty() && destinationSearchValue.isNotEmpty() && dateSearchValue.isEmpty()) {
             for (item in trip) {
                 if (
-                    item.tripName!!.lowercase().contains(tripNameParam.lowercase()) &&
-                    item.destination!!.lowercase().contains(destinationParam.lowercase())) {
-                    filteredItem.add(item)
+                    item.tripName!!.lowercase().contains(tripNameSearchValue.lowercase()) &&
+                    item.destination!!.lowercase().contains(destinationSearchValue.lowercase())) {
+                    filteredList.add(item)
                 }
             }
         }
 
-        if(tripNameParam.isNotEmpty() && destinationParam.isEmpty() && dateParam.isNotEmpty()) {
+        if(tripNameSearchValue.isNotEmpty() && destinationSearchValue.isEmpty() && dateSearchValue.isNotEmpty()) {
             for (item in trip) {
                 if (
-                    item.tripName!!.lowercase().contains(tripNameParam.lowercase()) &&
-                    item.date!!.lowercase().contains(dateParam.lowercase())) {
-                    filteredItem.add(item)
+                    item.tripName!!.lowercase().contains(tripNameSearchValue.lowercase()) &&
+                    item.date!!.lowercase().contains(dateSearchValue.lowercase())) {
+                    filteredList.add(item)
                 }
             }
         }
 
-        if(tripNameParam.isEmpty() && destinationParam.isNotEmpty() && dateParam.isNotEmpty()) {
+        if(tripNameSearchValue.isEmpty() && destinationSearchValue.isNotEmpty() && dateSearchValue.isNotEmpty()) {
             for (item in trip) {
                 if (
-                    item.destination!!.lowercase().contains(destinationParam.lowercase()) &&
-                    item.date!!.lowercase().contains(dateParam.lowercase())) {
-                    filteredItem.add(item)
+                    item.destination!!.lowercase().contains(destinationSearchValue.lowercase()) &&
+                    item.date!!.lowercase().contains(dateSearchValue.lowercase())) {
+                    filteredList.add(item)
                 }
             }
         }
 
-        if(tripNameParam.isNotEmpty() && destinationParam.isNotEmpty() && dateParam.isNotEmpty()) {
+        if(tripNameSearchValue.isNotEmpty() && destinationSearchValue.isNotEmpty() && dateSearchValue.isNotEmpty()) {
             for (item in trip) {
                 if (
-                    item.tripName!!.lowercase().contains(tripNameParam.lowercase()) &&
-                    item.destination!!.lowercase().contains(destinationParam.lowercase()) &&
-                    item.date!!.lowercase().contains(dateParam.lowercase())) {
-                    filteredItem.add(item)
+                    item.tripName!!.lowercase().contains(tripNameSearchValue.lowercase()) &&
+                    item.destination!!.lowercase().contains(destinationSearchValue.lowercase()) &&
+                    item.date!!.lowercase().contains(dateSearchValue.lowercase())) {
+                    filteredList.add(item)
                 }
             }
         }
 
-        if(tripNameParam.isEmpty() && destinationParam.isEmpty() && dateParam.isEmpty()) {
+        if(tripNameSearchValue.isEmpty() && destinationSearchValue.isEmpty() && dateSearchValue.isEmpty()) {
             for (item in trip) {
-                filteredItem.add(item)
+                filteredList.add(item)
             }
         }
 
